@@ -47,7 +47,7 @@ class:  middle
 
 - **Módulo** Métodos Cuantitativos para la Empresa
 
-- **Tipo** Obligatoria
+- **Tipo** Básica
 
 - **Crédito ECTS** 6 **Curso** 1º **Semestre** 2º
 ---
