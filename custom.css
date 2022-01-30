@@ -5,3 +5,7 @@
   background-color: #fff;
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */
 }
+
+td a {
+  color: white;
+}

@@ -3,7 +3,7 @@ title: "Matemáticas para la Economía II"
 subtitle: "Presentación"
 author: "Christian González"
 institute: "Dpto. Métodos Cuantitativos, ULPGC"
-date: "Curso 20/21"
+date: "Curso 21/22"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -41,7 +41,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 class:  middle
 
-- **Asignatura** 40706 - MATEMÁTICAS PARA LA ECONOMÍA II
+- **Asignatura** 40706 - [MATEMÁTICAS PARA LA ECONOMÍA II](http://www2.ulpgc.es/aplicaciones/proyectosdocentes/pdf.php?id_proyecto=61487&NUEVA=1)
 
 - **Departamento** Métodos Cuantitativos en Economía y Gestión
 
@@ -55,9 +55,9 @@ class:  middle
 
 # Profesorado
 
-- **Grupo 1** Julián Andrada
+- **Grupo 1** [Julián Andrada](mailto:julian.andrada@ulpgc.es)
 
-- **Grupo 2** Christian González
+- **Grupo 2** [Christian González](mailto:christian.gonzalez@ulpgc.es)
 
 ---
 class:  middle
@@ -66,12 +66,12 @@ class:  middle
 <ru-blockquote>Christian González Martel</ru-blockquote>
 
 .pull-left[
-|                                                                                                            |                                   |
-| :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| .RUred[<i class="fas fa-building"></i>] |  D-4.07 |
-| .RUred[<i class="fas fa-clock"></i>] |  Lunes de 9:30 a 13:30 |
-|  |  Viernes de 11:00 a 13:00 |
-| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-paper-plane"></i>]</a> |  christian.gonzalez@ulpgc.es       |
+|                                         |                                         |
+| :-------------------------------------- | :-------------------------------------- |
+| .RUred[<i class="fas fa-building"></i>]                                           |  D-4.07                |
+| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-clock"></i>] |  Lunes de 11:00 a 13:00 |
+|  |  Jueves de 9:30 a 13:30 |
+| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-paper-plane"></i>]</a> |  christian.gonzalez@ulpgc.es      |
 ]
 
 ---
@@ -241,11 +241,11 @@ class:  inverse, center, middle
 
 
 .pull-left[
-- **Teoría y ejemplos** 3 horas; *Aula A-2.1 y telepresencial*
+- `r emo::ji("book")` **Teoría y ejemplos** 3 horas; *Aula A-2.1 y telepresencial*
     - Guiones de clase
     - Relaciones de problemas
 
-- **Prácticas: Ejercicios** 1  hora; *Telepresencial*
+- `r emo::ji("screen")` **Prácticas: Ejercicios** 1  hora; *Telepresencial*
 
     - Tema 1-3: Derive
     - Tema 4: [LINGO](https://www.lindo.com/index.php/ls-downloads/try-lingo)
@@ -255,7 +255,7 @@ class:  inverse, center, middle
 ]
 
 .pull-right[
-- **Aula virtual**
+- `r emo::ji("coder")` **Aula virtual**
 
     - Novedades y anuncios
     - Foro de dudas
@@ -270,7 +270,7 @@ class:  inverse, center, middle
 ---
 class:  inverse, center, middle
 
-# Bibliografía
+# Bibliografía 
 ---
 
 ```{r refs, echo=FALSE, results="asis"}
@@ -305,7 +305,7 @@ DiagrammeR::mermaid("cal.mmd", widht = "100%", height= "100%")
 
 # Evaluación contínua (40 ptos.)
 
-<ru-blockquote>1 prueba de cuestiones cortas **(20 ptos.)**</ru-blockquote>
+<ru-blockquote> 1 prueba de cuestiones cortas + 1 ejercicio a desarrollar **(20 ptos.)**</ru-blockquote>
 
 <ru-blockquote>2 pruebas de ejercicios con ordenador **(2 * 10 ptos. = 20 ptos.)**</ru-blockquote>
 
@@ -346,30 +346,31 @@ del Campus Virtual de la asignatura u otros medios disponibles en la ULPGC.
 library(lubridate)
 library(kableExtra)
 library(dplyr)
+library(fontawesome)
 
-tmp <- as.data.frame(matrix(day(seq.Date(ymd("2021/02/08"),ymd("2021/05/30"), by = "day")), ncol =7, byrow= TRUE))
+tmp <- as.data.frame(matrix(day(seq.Date(ymd("2022/01/31"),ymd("2022/05/22"), by = "day")), ncol =7, byrow= TRUE))
 tmp[,6:7] <- NULL
 names(tmp) <- c("Lunes","Martes","Miércoles","Jueves","Viernes")
 
-rtmp <- as.data.frame(matrix(c(rep(NA,5),14:18,rep(NA,5),12:16,rep(NA,5)), ncol = 5,byrow=TRUE))
+rtmp <- as.data.frame(matrix(c(rep(NA,5),1:5,rep(NA,5),4:8,rep(NA,5)), ncol = 5,byrow=TRUE))
 names(rtmp) <- c("Lunes","Martes","Miércoles","Jueves","Viernes")
 
 fechas <- rbind(tmp,rtmp)
 fechas[is.na(fechas)] <- "..."
 
 plan <- data.frame(
-  SEMANA <- c(as.character(1:7),"Semana Santa",as.character(8:15),rep(NA,5)),
-  MES <- c(rep("febrero",4),rep("marzo",3),"marzo/abril",rep("abril",3),"abril/mayo",rep("mayo",4),"...","junio","...","junio","...")
+  SEMANA <- c(as.character(1:10),"Semana Santa",as.character(11:15),rep(NA,5)),
+  MES <- c("enero/febrero",rep("febrero",3),"febrero/marzo",rep("marzo",3),"marzo/abril",rep("abril",3),"abril/mayo",rep("mayo",3),"...","junio","...","julio","...")
 )
 
 
 aulas <- data.frame(
-  `Aula A-2.1` = c("Presentación", rep("Tema 1",2), rep("Tema 2",3), "Tema 3", "Semana Santa", rep("Tema 3",3), "EC1 26/04/2021", rep("Tema 4",4),NA, "Concocatoria ordinaria",NA,"Concocatoria extraordinaria",NA),
-  `Práctica` = c(rep("Práctica 0",2), rep("Práctica 1",2), rep("Práctica 2",3), NA, rep("Práctica 3",3), "EC2p 27/04/2021", rep("Práctica 4",3),"EC3p 25/05/2021",NA,"15/06/2021",NA,"13/07/2021",NA)
+  `Aula A-2.1` = c("Presentación/Tema1", rep("Tema 1",2), rep("Tema 2",3),   rep("Tema 3",4),NA, "EC1 21/04/2022", rep("Tema 4",4),NA, "Concocatoria ordinaria <a href='https://feet.ulpgc.es/sites/default/files/wp-content/uploads/2021/07/calendario_examenes_ge_2021-22_aprobado_en_junta_090721.pdf'><i class='fas fa-external-link-alt'></i></a>",NA,"Concocatoria extraordinaria  <a href='https://feet.ulpgc.es/sites/default/files/wp-content/uploads/2021/07/calendario_examenes_ge_2021-22_aprobado_en_junta_090721.pdf'><i class='fas fa-external-link-alt'></i></a>",NA),
+  `Práctica` = c(rep("Práctica 0",2), rep("Práctica 1",2), rep("Práctica 2",3),  rep("Práctica 3",3),NA, "EC1p 19/04/2022", rep("Práctica 4",3),"EC2p 17/05/2022",NA, "02/06/2022" ,NA,"06/07/2022",NA)
   )
 
 cal <- cbind(plan,fechas,aulas)
-names(cal) <- c("SEMANA", "MES","Lunes","Martes","Miércoles","Jueves","Viernes", "Aula A-2.1", "Práctica")
+names(cal) <- c("SEMANA", "MES","Lunes","Martes","Miércoles","Jueves","Viernes", "Aula A-2.1", "Práctica (D.03)")
 
 cal %>%
   head(-1) %>%
@@ -377,12 +378,31 @@ cal %>%
   kbl(escape = FALSE, format = "html",  align=rep('c', 9)) %>%
   kable_paper("hover", font_size = 12, full_width = T) %>%
 
-  column_spec(3,  background = ifelse(cal$Lunes == "26", "#00804b", "white"), color =ifelse(cal$Lunes == "26", "white", "black"), bold = T,) %>%
-  column_spec(4,  background = ifelse(grepl("^[EC]",cal$`Aula A-2.1`), "#00804b", "white"), color = ifelse(grepl("^[EC]",cal$`Aula A-2.1`), "white", "black"), bold = T) %>%
-    column_spec(8,  background = ifelse(grepl("^[EC]",cal$`Aula A-2.1`), "#00804b", "white"), color = ifelse(grepl("^[EC]",cal$`Aula A-2.1`), "white", "black"), bold = T) %>%
-      column_spec(9,  background = ifelse(grepl("^[E1-9]",cal$Práctica), "#00804b", "white"), color = ifelse(grepl("^[E1-9]",cal$Práctica), "white", "black"), bold = T) %>%
-  row_spec(8, bold = T, color = "white", background = "#D7261E")
-```
+
+  column_spec(4,  background = ifelse(grepl("^EC",cal$Práctica) | grepl("Concocatoria ordinaria",cal$`Aula A-2.1`), "#31c854", "white"), color = ifelse(grepl("^EC",cal$Práctica) | grepl("Concocatoria ordinaria",cal$`Aula A-2.1`), "white", "black")) %>%
+  column_spec(5,  background = ifelse(grepl("Concocatoria extraordinaria",cal$`Aula A-2.1`), "#31c854", "white"), color = ifelse(grepl("Concocatoria extraordinaria",cal$`Aula A-2.1`), "white", "black")) %>% 
+   
+    column_spec(6,  background = ifelse(grepl("^E",cal$`Aula A-2.1`) , "#31c854", "white"), color = ifelse(grepl("^E ",cal$`Aula A-2.1`) , "white", "black")) %>%
+  column_spec(8,  background = ifelse(grepl("^[EC]",cal$`Aula A-2.1`), "#31c854", "white"), color = ifelse(grepl("^[EC]",cal$`Aula A-2.1`), "white", "black")) %>%
+      column_spec(9,  background = ifelse(grepl("^[E1-9]",cal$Práctica), "#31c854", "white"), color = ifelse(grepl("^[E1-9]",cal$Práctica), "white", "black")) %>%
+  row_spec(11, bold = T, color = "white", background = "#D7261E")
+ ```
+---
+
+class:  middle
+
+
+<ru-blockquote>Christian González Martel</ru-blockquote>
+
+.pull-left[
+|                                                                                                            |                                   |
+| :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
+| .RUred[<i class="fas fa-building"></i>] |  D-4.07 |
+| .RUred[<i class="fas fa-clock"></i>] |  Lunes de 9:30 a 13:30 |
+|  |  Viernes de 11:00 a 13:00 |
+| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-paper-plane"></i>]</a> |  christian.gonzalez@ulpgc.es       |
+]
+
 ---
 class: middle
 background-image: url("/img/logo.png")
