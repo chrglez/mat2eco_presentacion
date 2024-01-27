@@ -3,7 +3,7 @@ title: "Matemáticas para la Economía II"
 subtitle: "Presentación"
 author: "Christian González"
 institute: "Dpto. Métodos Cuantitativos, ULPGC"
-date: "Curso 21/22"
+date: "Curso 23/24"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -55,7 +55,7 @@ class:  middle
 
 # Profesorado
 
-- **Grupo 1** [Julián Andrada](mailto:julian.andrada@ulpgc.es)
+- **Grupo 1** [Christian González](mailto:christian.gonzalez@ulpgc.es)
 
 - **Grupo 2** [Christian González](mailto:christian.gonzalez@ulpgc.es)
 
@@ -69,8 +69,9 @@ class:  middle
 |                                         |                                         |
 | :-------------------------------------- | :-------------------------------------- |
 | .RUred[<i class="fas fa-building"></i>]                                           |  D-4.07                |
-| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-clock"></i>] |  Lunes de 11:00 a 13:00 |
-|  |  Jueves de 9:30 a 13:30 |
+| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-clock"></i>] |  Lunes de 11:00 a 13:30 |
+|  |  Martes de 12:00 a 13:00 |
+|  |  Jueves de 11:00 a 13:30 |
 | <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-paper-plane"></i>]</a> |  christian.gonzalez@ulpgc.es      |
 ]
 
@@ -78,17 +79,32 @@ class:  middle
 
 class:  inverse, center, middle
 
-# Contribución de la asignatura 
+# Requisitos previos
 
+---
+- Se recomienda que el alumno tenga destreza en el manejo de las herramientas básicas de la **aritmética, del cálculo y del álgebra lineal**.
+
+- Se espera que en la etapa preuniversitaria se hayan adquirido las **nociones básicas** que permitan al alumno **operar sin dificultad**,dominar las técnicas básicas  de **resolución  de  ecuaciones  y  su  interpretación  geométrica plasmada básicamente en la representación de rectas y parábolas.**
+
+- Asímismo,cabe esperar que el alumno esté familiarizado con el **estudio de las funciones elementales, que conozca sus gráficas, continuidad, derivabilidad, además de tener nociones elementales sobre matrices y determinantes.**
+
+- En este sentido, resulta recomendable para el estudiante haber superado la asignatura de **Matemáticas para la Economía I.**
+
+- El alumno deberá tener desarrollada la capacidad de abstracción que permita la compresión de los distintos contenidos de la asignatura, así como su traslado a las distintas aplicaciones en la Economía.
+---
+
+class:  inverse, center, middle
+
+# Contribución de la asignatura
 
 ---
 
 
-- Se trata de una asignatura de conocimientos instrumentales dirigida a servir de soporte principal a otras asignaturas cuantitativas del grado tales como la estadística, la econometría u otras matemáticas. 
+- Se trata de una asignatura de conocimientos instrumentales dirigida a servir de soporte principal a otras asignaturas cuantitativas del grado tales como la estadística, la econometría u otras matemáticas.
 
-- Además, persigue servir de herramienta al resto de las asignaturas que requieran las técnicas cuantitativas para su desarrollo. 
+- Además, persigue servir de herramienta al resto de las asignaturas que requieran las técnicas cuantitativas para su desarrollo.
 
-- Esta asignatura pretende dar una formación básica y general que permita acceder en las mejores condiciones posibles a cualquiera de las diversas salidas profesionales para las que capacitan los estudios de Economía. 
+- Esta asignatura pretende dar una formación básica y general que permita acceder en las mejores condiciones posibles a cualquiera de las diversas salidas profesionales para las que capacitan los estudios de Economía.
 
 - De esta manera, se intenta reforzar de manera significativa los perfiles de empleabilidad más habituales para este tipo de estudios en nuestro entorno.
 
@@ -96,7 +112,7 @@ class:  inverse, center, middle
 
 class:  inverse, center, middle
 
-# Objetivos de la asignatura 
+# Objetivos de la asignatura
 
 
 ---
@@ -146,7 +162,7 @@ class:  middle
 ---
 class:  inverse, center, middle
 
-# Temario 
+# Temario
 
 ---
 
@@ -168,9 +184,9 @@ class:  middle
 - **Tema 1.** Funciones reales de varias variables.
 
     1. Funciones de varias variables
-    
+
     2. Dominio y curvas de nivel
-    
+
     3. Límites y continuidad de funciones de varias variables
 
 
@@ -198,21 +214,21 @@ class:  middle
 - **Tema 3.** Introducción a la optimización de varias variables.
 
     1. Planteamiento de un problema de optimización
-    
+
     2. Optimización sin restricciones
-    
+
         1. Condición de primer orden
-        
+
         2. Condición de segundo orden
-        
+
     3. Optimización con restricciones de igualdad
-    
+
         1. Aspectos geométricos
-    
+
         2. Métodos de los multiplicadores de Lagrange
-        
+
         3. Interpretación  de los multiplicadores de Lagrange
-        
+
     4. Resultados fundamentales
 
 ---
@@ -223,11 +239,11 @@ class:  middle
 - **Tema 4.** Introducción a la programación lineal.
 
     1. Conceptos previos: Sistemas de inecuaciones lineales
-    
+
     2. Planteamiento de un PPL
-    
+
     3. Resolución gráfica y resultados
-    
+
     4. Dualidad
 
 
@@ -241,11 +257,11 @@ class:  inverse, center, middle
 
 
 .pull-left[
-- `r emo::ji("book")` **Teoría y ejemplos** 3 horas; *Aula A-2.1 y telepresencial*
+- `r emo::ji("book")` **Teoría y ejemplos** 3 horas; *Aula A-2.1*
     - Guiones de clase
     - Relaciones de problemas
 
-- `r emo::ji("screen")` **Prácticas: Ejercicios** 1  hora; *Telepresencial*
+- `r emo::ji("screen")` **Prácticas: Ejercicios** 1  hora;
 
     - Tema 1-3: Derive
     - Tema 4: [LINGO](https://www.lindo.com/index.php/ls-downloads/try-lingo)
@@ -270,7 +286,7 @@ class:  inverse, center, middle
 ---
 class:  inverse, center, middle
 
-# Bibliografía 
+# Bibliografía
 ---
 
 ```{r refs, echo=FALSE, results="asis"}
@@ -286,7 +302,7 @@ class:  inverse, center, middle
 
 - La **tutoría académica individualizada** se centrará además en las dudas acerca del contenido de la asignatura que puedan surgir a lo largo del aprendizaje del estudiante, tanto como elemento de diagnóstico como de reflexión, proporcionándole la asistencia y la explicación adicional, y complementaria, en las tareas y actividades descritas en el plan de aprendizaje. En este sentido, se tratará de potenciar la capacidad autónoma del estudiante para la mejora de su rendimiento académico.
 
-- La **atención telefónica**, por la naturaleza de la asignatura, se concretará en el asesoramiento académico al estudiante sobre aquellas cuestiones relacionadas con la organización y aspectos generales de la asignatura. 
+- La **atención telefónica**, por la naturaleza de la asignatura, se concretará en el asesoramiento académico al estudiante sobre aquellas cuestiones relacionadas con la organización y aspectos generales de la asignatura.
 
 - La **atención virtual (on line)** constituirá una vía de comunicación complementaria a la atención presencial y se establecerá bien por medio del correo electrónico institucional o bien en el aula virtual de la asignatura. En éste último, el estudiante dispone de diversos recursos de comunicación: tablón de anuncios, foros de dudas, etc. Los foros de dudas se consideran espacios de participación entre estudiantes bajo la supervisión del profesor.
 
@@ -310,7 +326,7 @@ DiagrammeR::mermaid("cal.mmd", widht = "100%", height= "100%")
 <ru-blockquote>2 pruebas de ejercicios con ordenador **(2 * 10 ptos. = 20 ptos.)**</ru-blockquote>
 
 <ru-blockquote>La EC es **OBLIGATORIA**</ru-blockquote>
- 
+
 <ru-blockquote>Para poder presentarse a cada prueba de EC es **OBLIGATORIO** que el alumno haya realizado adecuadamente ciertas actividades propuestas a lo largo del semestre.
 </ru-blockquote>
 
@@ -320,10 +336,10 @@ DiagrammeR::mermaid("cal.mmd", widht = "100%", height= "100%")
 
 <ru-blockquote>Cuestiones cortas **(30 ptos.)**</ru-blockquote>
 
-<ru-blockquote>2 ejercicios a desarrollar **(2 * 15 ptos. = 30 ptos.)**</ru-blockquote>
+<ru-blockquote>Ejercicios a desarrollar **(2 * 15 ptos. = 30 ptos.)**</ru-blockquote>
 
 <ru-blockquote>Las fechas de información pública de los resultados de los exámenes serán anunciadas el día de realización del examen</ru-blockquote>
- 
+
 <ru-blockquote>Las calificaciones y las fechas de revisión de exámenes, se harán públicas en la página web de la asignatura y en el Aula Virtual</ru-blockquote>
 
 ---
@@ -332,12 +348,10 @@ DiagrammeR::mermaid("cal.mmd", widht = "100%", height= "100%")
 
 <ru-blockquote>El alumno deberá alcanzar un mínimo de 50 puntos sobre 100 puntos para superar la asignatura.</ru-blockquote>
 
-> El sistema de evaluación será aplicado en la **convocatorias ordinaria y extraordinaria** del curso.
+> El sistema de evaluación será aplicado en la **convocatorias ordinaria** del curso.
 
-> En la **convocatoria extraordinaria y especial**,  el  alumno  podrá  presentarse  al  100%  de  la calificación  de  la asignatura.
+> En la **convocatoria extraordinaria y especial**,  el  alumno  se presentará al  100%  de  la calificación  de  la asignatura.
 
-- La realización telemática **no presencial** de las pruebas de la EC y el EF se llevará a cabo a través
-del Campus Virtual de la asignatura u otros medios disponibles en la ULPGC.
 
 ---
 
@@ -348,60 +362,75 @@ library(kableExtra)
 library(dplyr)
 library(fontawesome)
 
-tmp <- as.data.frame(matrix(day(seq.Date(ymd("2022/01/31"),ymd("2022/05/22"), by = "day")), ncol =7, byrow= TRUE))
+tmp <- as.data.frame(matrix(day(seq.Date(ymd("2024/01/29"),ymd("2024/05/19"), by = "day")), ncol =7, byrow= TRUE))
 tmp[,6:7] <- NULL
 names(tmp) <- c("Lunes","Martes","Miércoles","Jueves","Viernes")
 
-rtmp <- as.data.frame(matrix(c(rep(NA,5),1:5,rep(NA,5),4:8,rep(NA,5)), ncol = 5,byrow=TRUE))
+rtmp <- as.data.frame(matrix(c(rep(NA,5),27:31,rep(NA,5),1:5), ncol = 5,byrow=TRUE))
 names(rtmp) <- c("Lunes","Martes","Miércoles","Jueves","Viernes")
 
 fechas <- rbind(tmp,rtmp)
 fechas[is.na(fechas)] <- "..."
 
 plan <- data.frame(
-  SEMANA <- c(as.character(1:10),"Semana Santa",as.character(11:15),rep(NA,5)),
-  MES <- c("enero/febrero",rep("febrero",3),"febrero/marzo",rep("marzo",3),"marzo/abril",rep("abril",3),"abril/mayo",rep("mayo",3),"...","junio","...","julio","...")
+  SEMANA <- c(as.character(1:8),"Semana Santa",as.character(9:15),rep(NA,4)),
+  MES <- c("enero/febrero",rep("febrero",3),"febrero/marzo",rep("marzo",4),rep("abril",4),"abril/mayo",rep("mayo",2),"...","junio","...","julio")
 )
 
 
 aulas <- data.frame(
-  `Aula A-2.1` = c("Presentación/Tema1", rep("Tema 1",2), rep("Tema 2",3),   rep("Tema 3",4),NA, "EC1 21/04/2022", rep("Tema 4",4),NA, "Concocatoria ordinaria <a href='https://feet.ulpgc.es/sites/default/files/wp-content/uploads/2021/07/calendario_examenes_ge_2021-22_aprobado_en_junta_090721.pdf'><i class='fas fa-external-link-alt'></i></a>",NA,"Concocatoria extraordinaria  <a href='https://feet.ulpgc.es/sites/default/files/wp-content/uploads/2021/07/calendario_examenes_ge_2021-22_aprobado_en_junta_090721.pdf'><i class='fas fa-external-link-alt'></i></a>",NA),
-  `Práctica` = c(rep("Práctica 0",2), rep("Práctica 1",2), rep("Práctica 2",3),  rep("Práctica 3",3),NA, "EC1p 19/04/2022", rep("Práctica 4",3),"EC2p 17/05/2022",NA, "02/06/2022" ,NA,"06/07/2022",NA)
+  `Aulas A-0.1,A-0.2` = c("Presentación/Tema1", rep("Tema 1",2), rep("Tema 2",3),   rep("Tema 3",2),NA,rep("Tema 3",2), "EC1 18/04/2023", rep("Tema 4",4),NA, "Concocatoria ordinaria <a href='https://feet.ulpgc.es/sites/default/files/wp-content/uploads/22_23/CALENDARIOEXAMENESYTFT/calendario_examenes_ge_2022-23.pdf'><i class='fas fa-external-link-alt'></i></a>",NA,"Concocatoria extraordinaria  <a href='https://feet.ulpgc.es/sites/default/files/wp-content/uploads/22_23/CALENDARIOEXAMENESYTFT/calendario_examenes_ge_2022-23.pdf'><i class='fas fa-external-link-alt'></i></a>"),
+  `Práctica` = c(rep("Práctica 0",1), rep("Práctica 1",1),NA, rep("Práctica 1",2), rep("Práctica 2",2),  rep("Práctica 2",1),NA,rep("Práctica 3",3), "EC1p 23/04/2023", rep("Práctica 4",2),"EC2p 16/05/2023",NA, "27/05/2023" ,NA,"02/07/2023")
   )
 
 cal <- cbind(plan,fechas,aulas)
-names(cal) <- c("SEMANA", "MES","Lunes","Martes","Miércoles","Jueves","Viernes", "Aula A-2.1", "Práctica (D.03)")
+names(cal) <- c("SEMANA", "MES","Lunes","Martes","Miércoles","Jueves","Viernes", "Aula A-0.1,A-0.2", "Práctica (D.03)")
 
-cal %>%
-  head(-1) %>%
+cal  %>%
   mutate(across(everything(), ~tidyr::replace_na(.x, ""))) %>%
   kbl(escape = FALSE, format = "html",  align=rep('c', 9)) %>%
-  kable_paper("hover", font_size = 12, full_width = T) %>%
+  kable_paper(font_size = 10, full_width = T) %>%
 
 
-  column_spec(4,  background = ifelse(grepl("^EC",cal$Práctica) | grepl("Concocatoria ordinaria",cal$`Aula A-2.1`), "#31c854", "white"), color = ifelse(grepl("^EC",cal$Práctica) | grepl("Concocatoria ordinaria",cal$`Aula A-2.1`), "white", "black")) %>%
-  column_spec(5,  background = ifelse(grepl("Concocatoria extraordinaria",cal$`Aula A-2.1`), "#31c854", "white"), color = ifelse(grepl("Concocatoria extraordinaria",cal$`Aula A-2.1`), "white", "black")) %>% 
-   
-    column_spec(6,  background = ifelse(grepl("^E",cal$`Aula A-2.1`) , "#31c854", "white"), color = ifelse(grepl("^E ",cal$`Aula A-2.1`) , "white", "black")) %>%
-  column_spec(8,  background = ifelse(grepl("^[EC]",cal$`Aula A-2.1`), "#31c854", "white"), color = ifelse(grepl("^[EC]",cal$`Aula A-2.1`), "white", "black")) %>%
-      column_spec(9,  background = ifelse(grepl("^[E1-9]",cal$Práctica), "#31c854", "white"), color = ifelse(grepl("^[E1-9]",cal$Práctica), "white", "black")) %>%
-  row_spec(11, bold = T, color = "white", background = "#D7261E")
- ```
+  column_spec(6,  background = ifelse(grepl("^EC2p",cal[,9])|grepl("^EC",cal[,8]), "#31c854", "white"),
+              color = ifelse(grepl("^EC2p",cal[,9])|grepl("^EC",cal[,8]), "white", "black")) %>%
+  
+  column_spec(4,  background = ifelse(grepl("^EC1p|^0",cal[,9]) , "#31c854", "white"),
+              color = ifelse(grepl("^EC1p|^0",cal[,9]), "white", "black")) %>%
+  
+    column_spec(3,  background = ifelse(grepl("^2",cal[,9]) , "#31c854", "white"),
+              color = ifelse(grepl("^2",cal[,9]), "white", "black")) %>%
+  
+  column_spec(4,  background = ifelse(cal[,2] == "febrero" & cal[,4] == "13" , "#D7261E", ""),
+              color = ifelse(cal[,2] == "febrero" & cal[,4] == "13" , "white", "")) %>%
+  
+#  column_spec(5,  background = ifelse(cal[,5] == "1", "#D7261E", "white"),
+#             color = ifelse(cal[,5] == "1", "white", "black")) %>%
+  
+  #column_spec(5,  background = ifelse(grepl("^2",cal[,9]) , "#31c854", "white"),
+   #             color = ifelse(grepl("^2",cal[,9]) , "white", "black")) %>% 
+  
+  row_spec(9, bold = T, color = "white", background = "#D7261E")
+```
 ---
 
 class:  middle
 
 
+
+
 <ru-blockquote>Christian González Martel</ru-blockquote>
 
 .pull-left[
-|                                                                                                            |                                   |
-| :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| .RUred[<i class="fas fa-building"></i>] |  D-4.07 |
-| .RUred[<i class="fas fa-clock"></i>] |  Lunes de 9:30 a 13:30 |
-|  |  Viernes de 11:00 a 13:00 |
-| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-paper-plane"></i>]</a> |  christian.gonzalez@ulpgc.es       |
+|                                         |                                         |
+| :-------------------------------------- | :-------------------------------------- |
+| .RUred[<i class="fas fa-building"></i>]                                           |  D-4.07                |
+| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-clock"></i>] |  Lunes de 11:00 a 13:00 |
+|  |  Martes de 11:00 a 12:30 |
+|  |  Jueves de 9:30 a 12:00 |
+| <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-paper-plane"></i>]</a> |  christian.gonzalez@ulpgc.es      |
 ]
+
 
 ---
 class: middle

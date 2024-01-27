@@ -4,16 +4,17 @@
     <title>Matemáticas para la Economía II</title>
     <meta charset="utf-8" />
     <meta name="author" content="Christian González" />
+    <script src="libs/header-attrs-2.18/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/rutgers.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/rutgers-fonts.css" rel="stylesheet" />
-    <script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+    <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
     <script src="libs/d3-3.3.8/d3.min.js"></script>
     <script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
     <link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
     <script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
     <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
     <script src="libs/chromatography-0.1/chromatography.js"></script>
-    <script src="libs/DiagrammeR-binding-1.0.6.1/DiagrammeR.js"></script>
+    <script src="libs/DiagrammeR-binding-1.0.9.9000/DiagrammeR.js"></script>
     <script src="libs/kePrint-0.0.1/kePrint.js"></script>
     <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
     <meta name=viewport content="width=device-width,initial-scale=1">  
@@ -26,11 +27,21 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Matemáticas para la Economía II
+]
+.subtitle[
 ## Presentación
+]
+.author[
 ### Christian González
+]
+.institute[
 ### Dpto. Métodos Cuantitativos, ULPGC
-### Curso 21/22
+]
+.date[
+### Curso 23/24
+]
 
 ---
 
@@ -58,7 +69,7 @@ class:  middle
 
 # Profesorado
 
-- **Grupo 1** [Julián Andrada](mailto:julian.andrada@ulpgc.es)
+- **Grupo 1** [Christian González](mailto:christian.gonzalez@ulpgc.es)
 
 - **Grupo 2** [Christian González](mailto:christian.gonzalez@ulpgc.es)
 
@@ -72,8 +83,9 @@ class:  middle
 |                                         |                                         |
 | :-------------------------------------- | :-------------------------------------- |
 | .RUred[&lt;i class="fas fa-building"&gt;&lt;/i&gt;]                                           |  D-4.07                |
-| &lt;a href="mailto:christian.gonzalez@ulpgc.es"&gt;.RUred[&lt;i class="fas fa-clock"&gt;&lt;/i&gt;] |  Lunes de 11:00 a 13:00 |
-|  |  Jueves de 9:30 a 13:30 |
+| &lt;a href="mailto:christian.gonzalez@ulpgc.es"&gt;.RUred[&lt;i class="fas fa-clock"&gt;&lt;/i&gt;] |  Lunes de 11:00 a 13:30 |
+|  |  Martes de 12:00 a 13:00 |
+|  |  Jueves de 11:00 a 13:30 |
 | &lt;a href="mailto:christian.gonzalez@ulpgc.es"&gt;.RUred[&lt;i class="fas fa-paper-plane"&gt;&lt;/i&gt;]&lt;/a&gt; |  christian.gonzalez@ulpgc.es      |
 ]
 
@@ -81,17 +93,32 @@ class:  middle
 
 class:  inverse, center, middle
 
-# Contribución de la asignatura 
+# Requisitos previos
 
+---
+- Se recomienda que el alumno tenga destreza en el manejo de las herramientas básicas de la **aritmética, del cálculo y del álgebra lineal**.
+
+- Se espera que en la etapa preuniversitaria se hayan adquirido las **nociones básicas** que permitan al alumno **operar sin dificultad**,dominar las técnicas básicas  de **resolución  de  ecuaciones  y  su  interpretación  geométrica plasmada básicamente en la representación de rectas y parábolas.**
+
+- Asímismo,cabe esperar que el alumno esté familiarizado con el **estudio de las funciones elementales, que conozca sus gráficas, continuidad, derivabilidad, además de tener nociones elementales sobre matrices y determinantes.**
+
+- En este sentido, resulta recomendable para el estudiante haber superado la asignatura de **Matemáticas para la Economía I.**
+
+- El alumno deberá tener desarrollada la capacidad de abstracción que permita la compresión de los distintos contenidos de la asignatura, así como su traslado a las distintas aplicaciones en la Economía.
+---
+
+class:  inverse, center, middle
+
+# Contribución de la asignatura
 
 ---
 
 
-- Se trata de una asignatura de conocimientos instrumentales dirigida a servir de soporte principal a otras asignaturas cuantitativas del grado tales como la estadística, la econometría u otras matemáticas. 
+- Se trata de una asignatura de conocimientos instrumentales dirigida a servir de soporte principal a otras asignaturas cuantitativas del grado tales como la estadística, la econometría u otras matemáticas.
 
-- Además, persigue servir de herramienta al resto de las asignaturas que requieran las técnicas cuantitativas para su desarrollo. 
+- Además, persigue servir de herramienta al resto de las asignaturas que requieran las técnicas cuantitativas para su desarrollo.
 
-- Esta asignatura pretende dar una formación básica y general que permita acceder en las mejores condiciones posibles a cualquiera de las diversas salidas profesionales para las que capacitan los estudios de Economía. 
+- Esta asignatura pretende dar una formación básica y general que permita acceder en las mejores condiciones posibles a cualquiera de las diversas salidas profesionales para las que capacitan los estudios de Economía.
 
 - De esta manera, se intenta reforzar de manera significativa los perfiles de empleabilidad más habituales para este tipo de estudios en nuestro entorno.
 
@@ -99,7 +126,7 @@ class:  inverse, center, middle
 
 class:  inverse, center, middle
 
-# Objetivos de la asignatura 
+# Objetivos de la asignatura
 
 
 ---
@@ -149,7 +176,7 @@ class:  middle
 ---
 class:  inverse, center, middle
 
-# Temario 
+# Temario
 
 ---
 
@@ -171,9 +198,9 @@ class:  middle
 - **Tema 1.** Funciones reales de varias variables.
 
     1. Funciones de varias variables
-    
+
     2. Dominio y curvas de nivel
-    
+
     3. Límites y continuidad de funciones de varias variables
 
 
@@ -201,21 +228,21 @@ class:  middle
 - **Tema 3.** Introducción a la optimización de varias variables.
 
     1. Planteamiento de un problema de optimización
-    
+
     2. Optimización sin restricciones
-    
+
         1. Condición de primer orden
-        
+
         2. Condición de segundo orden
-        
+
     3. Optimización con restricciones de igualdad
-    
+
         1. Aspectos geométricos
-    
+
         2. Métodos de los multiplicadores de Lagrange
-        
+
         3. Interpretación  de los multiplicadores de Lagrange
-        
+
     4. Resultados fundamentales
 
 ---
@@ -226,11 +253,11 @@ class:  middle
 - **Tema 4.** Introducción a la programación lineal.
 
     1. Conceptos previos: Sistemas de inecuaciones lineales
-    
+
     2. Planteamiento de un PPL
-    
+
     3. Resolución gráfica y resultados
-    
+
     4. Dualidad
 
 
@@ -244,11 +271,11 @@ class:  inverse, center, middle
 
 
 .pull-left[
-- 📖 **Teoría y ejemplos** 3 horas; *Aula A-2.1 y telepresencial*
+- 📖 **Teoría y ejemplos** 3 horas; *Aula A-2.1*
     - Guiones de clase
     - Relaciones de problemas
 
-- 💻 **Prácticas: Ejercicios** 1  hora; *Telepresencial*
+- 💻 **Prácticas: Ejercicios** 1  hora;
 
     - Tema 1-3: Derive
     - Tema 4: [LINGO](https://www.lindo.com/index.php/ls-downloads/try-lingo)
@@ -258,7 +285,7 @@ class:  inverse, center, middle
 ]
 
 .pull-right[
-- 👩‍💻 **Aula virtual**
+- 👨‍💻 **Aula virtual**
 
     - Novedades y anuncios
     - Foro de dudas
@@ -273,28 +300,30 @@ class:  inverse, center, middle
 ---
 class:  inverse, center, middle
 
-# Bibliografía 
+# Bibliografía
 ---
 
-Dávila, N., E. Gómez, and M. García Artiles (2002). _Ejercicios resueltos de
-cálculo para la economía y la empresa: Aplicaciones prácticas con DERIVE
-(Monografia)_. Spain: Servicio de Publicaciones y Difusión Científica de la ULPGC.
-ISBN: 84-88412-41-X. URL:
+Dávila, N., E. Gómez, and M. García Artiles (2002). _Ejercicios
+resueltos de cálculo para la economía y la empresa: Aplicaciones
+prácticas con DERIVE (Monografia)_. Spain: Servicio de Publicaciones y
+Difusión Científica de la ULPGC. ISBN: 84-88412-41-X. URL:
 [http://bibproxy.ulpgc.es/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=cat07429a&amp;AN=ulpgc.265593&amp;lang=es&amp;site=eds-live&amp;scope=site](http://bibproxy.ulpgc.es/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=cat07429a&amp;AN=ulpgc.265593&amp;lang=es&amp;site=eds-live&amp;scope=site).
 
-Gómez Déniz, E., M. C. Martel Escobar, N. Dávila Cárdenes, et al. (2002).
-_Introducción al calculo para la economía y la empresa_. Servicio de Publicaciones
-y Difusión Científica de la ULPGC. ISBN: 84-88412-33-9. URL:
+Gómez Déniz, E., M. C. Martel Escobar, N. Dávila Cárdenes, et al.
+(2002). _Introducción al calculo para la economía y la empresa_.
+Servicio de Publicaciones y Difusión Científica de la ULPGC. ISBN:
+84-88412-33-9. URL:
 [http://bibproxy.ulpgc.es/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=cat07429a&amp;AN=ulpgc.265589&amp;lang=es&amp;site=eds-live&amp;scope=site](http://bibproxy.ulpgc.es/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=cat07429a&amp;AN=ulpgc.265589&amp;lang=es&amp;site=eds-live&amp;scope=site).
 
-Dorta González, P. (2004). _Álgebra lineal y programación lineal para la economía
-y la empresa_. Spain. ISBN: 8496296105. URL:
+Dorta González, P. (2004). _Álgebra lineal y programación lineal para
+la economía y la empresa_. Spain. ISBN: 8496296105. URL:
 [http://bibproxy.ulpgc.es/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=cat07429a&amp;AN=ulpgc.293074&amp;lang=es&amp;site=eds-live&amp;scope=site](http://bibproxy.ulpgc.es/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=cat07429a&amp;AN=ulpgc.293074&amp;lang=es&amp;site=eds-live&amp;scope=site).
 
-Martel Escobar, M. C., J. Andrada Flix, and J. Hernndez Guerra (2004). _Gua
-interactiva de clculo para la economa y la empresa con Derive (Manual docente
-universitario. rea de Ciencias Sociales y Jurdicas)_. Spain: Servicio de
-Publicaciones y Difusin Cientfica de la ULPGC. ISBN: 8496131920. URL:
+Martel Escobar, M. C., J. Andrada Flix, and J. Hernndez Guerra (2004).
+_Gua interactiva de clculo para la economa y la empresa con Derive
+(Manual docente universitario. rea de Ciencias Sociales y Jurdicas)_.
+Spain: Servicio de Publicaciones y Difusin Cientfica de la ULPGC. ISBN:
+8496131920. URL:
 [http://bibproxy.ulpgc.es/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=cat07429a&amp;AN=ulpgc.309913&amp;lang=es&amp;site=eds-live&amp;scope=site](http://bibproxy.ulpgc.es/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=cat07429a&amp;AN=ulpgc.309913&amp;lang=es&amp;site=eds-live&amp;scope=site).
 
 ---
@@ -305,7 +334,7 @@ class:  inverse, center, middle
 
 - La **tutoría académica individualizada** se centrará además en las dudas acerca del contenido de la asignatura que puedan surgir a lo largo del aprendizaje del estudiante, tanto como elemento de diagnóstico como de reflexión, proporcionándole la asistencia y la explicación adicional, y complementaria, en las tareas y actividades descritas en el plan de aprendizaje. En este sentido, se tratará de potenciar la capacidad autónoma del estudiante para la mejora de su rendimiento académico.
 
-- La **atención telefónica**, por la naturaleza de la asignatura, se concretará en el asesoramiento académico al estudiante sobre aquellas cuestiones relacionadas con la organización y aspectos generales de la asignatura. 
+- La **atención telefónica**, por la naturaleza de la asignatura, se concretará en el asesoramiento académico al estudiante sobre aquellas cuestiones relacionadas con la organización y aspectos generales de la asignatura.
 
 - La **atención virtual (on line)** constituirá una vía de comunicación complementaria a la atención presencial y se establecerá bien por medio del correo electrónico institucional o bien en el aula virtual de la asignatura. En éste último, el estudiante dispone de diversos recursos de comunicación: tablón de anuncios, foros de dudas, etc. Los foros de dudas se consideran espacios de participación entre estudiantes bajo la supervisión del profesor.
 
@@ -316,8 +345,8 @@ class:  inverse, center, middle
 ---
 
 class: middle, center
-<div id="htmlwidget-aac79f3f2cc4a1ecd650" style="width:504px;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-aac79f3f2cc4a1ecd650">{"x":{"diagram":"graph LR\nA((\"Nota Final\"))---|\"40%\"|B((\"Evaluación <br> continua\"))\nA---|\"60%\"|C((\"Examen Final\"))\nstyle A stroke:#333,stroke-width:4px\nstyle B stroke:#333,stroke-width:4px\nstyle C stroke:#333,stroke-width:4px"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-99ef151f8e74fb57292e" style="width:504px;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-99ef151f8e74fb57292e">{"x":{"diagram":"graph LR\nA((\"Nota Final\"))---|\"40%\"|B((\"Evaluación <br> continua\"))\nA---|\"60%\"|C((\"Examen Final\"))\nstyle A stroke:#333,stroke-width:4px\nstyle B stroke:#333,stroke-width:4px\nstyle C stroke:#333,stroke-width:4px"},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -328,7 +357,7 @@ class: middle, center
 &lt;ru-blockquote&gt;2 pruebas de ejercicios con ordenador **(2 * 10 ptos. = 20 ptos.)**&lt;/ru-blockquote&gt;
 
 &lt;ru-blockquote&gt;La EC es **OBLIGATORIA**&lt;/ru-blockquote&gt;
- 
+
 &lt;ru-blockquote&gt;Para poder presentarse a cada prueba de EC es **OBLIGATORIO** que el alumno haya realizado adecuadamente ciertas actividades propuestas a lo largo del semestre.
 &lt;/ru-blockquote&gt;
 
@@ -338,10 +367,10 @@ class: middle, center
 
 &lt;ru-blockquote&gt;Cuestiones cortas **(30 ptos.)**&lt;/ru-blockquote&gt;
 
-&lt;ru-blockquote&gt;2 ejercicios a desarrollar **(2 * 15 ptos. = 30 ptos.)**&lt;/ru-blockquote&gt;
+&lt;ru-blockquote&gt;Ejercicios a desarrollar **(2 * 15 ptos. = 30 ptos.)**&lt;/ru-blockquote&gt;
 
 &lt;ru-blockquote&gt;Las fechas de información pública de los resultados de los exámenes serán anunciadas el día de realización del examen&lt;/ru-blockquote&gt;
- 
+
 &lt;ru-blockquote&gt;Las calificaciones y las fechas de revisión de exámenes, se harán públicas en la página web de la asignatura y en el Aula Virtual&lt;/ru-blockquote&gt;
 
 ---
@@ -350,17 +379,15 @@ class: middle, center
 
 &lt;ru-blockquote&gt;El alumno deberá alcanzar un mínimo de 50 puntos sobre 100 puntos para superar la asignatura.&lt;/ru-blockquote&gt;
 
-&gt; El sistema de evaluación será aplicado en la **convocatorias ordinaria y extraordinaria** del curso.
+&gt; El sistema de evaluación será aplicado en la **convocatorias ordinaria** del curso.
 
-&gt; En la **convocatoria extraordinaria y especial**,  el  alumno  podrá  presentarse  al  100%  de  la calificación  de  la asignatura.
+&gt; En la **convocatoria extraordinaria y especial**,  el  alumno  se presentará al  100%  de  la calificación  de  la asignatura.
 
-- La realización telemática **no presencial** de las pruebas de la EC y el EF se llevará a cabo a través
-del Campus Virtual de la asignatura u otros medios disponibles en la ULPGC.
 
 ---
 
 
-&lt;table class=" lightable-paper lightable-hover" style='font-size: 12px; font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;'&gt;
+&lt;table class=" lightable-paper" style='font-size: 10px; font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;'&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style="text-align:center;"&gt; SEMANA &lt;/th&gt;
@@ -370,7 +397,7 @@ del Campus Virtual de la asignatura u otros medios disponibles en la ULPGC.
    &lt;th style="text-align:center;"&gt; Miércoles &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; Jueves &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; Viernes &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Aula A-2.1 &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Aula A-0.1,A-0.2 &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; Práctica (D.03) &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
@@ -378,222 +405,222 @@ del Campus Virtual de la asignatura u otros medios disponibles en la ULPGC.
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; enero/febrero &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 30 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 31 &lt;/td&gt;
    &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 2 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Presentación/Tema1 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Presentación/Tema1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; febrero &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
    &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 1 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 9 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; febrero &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 12 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color: white !important;background-color: #D7261E !important;"&gt; 13 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 14 &lt;/td&gt;
    &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 15 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 16 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 17 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 18 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 1 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; febrero &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 19 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 20 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 21 &lt;/td&gt;
    &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 22 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 23 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 24 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 25 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 2 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 23 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; febrero/marzo &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 26 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 27 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 28 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 2 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 2 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 2 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; marzo &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 2 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 2 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 7 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; marzo &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 14 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 15 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 16 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 17 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 18 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 3 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 2 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 12 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 13 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 14 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 8 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; marzo &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 21 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 22 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 23 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 24 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 25 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 3 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 3 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 18 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 19 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 21 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 22 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; Semana Santa &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; marzo &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 25 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 26 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 27 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 28 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt;  &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; marzo/abril &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 28 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 29 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 30 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 31 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 3 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; abril &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 3 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; abril &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 3 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 3 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; Semana Santa &lt;/td&gt;
-   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; abril &lt;/td&gt;
-   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 11 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 12 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 13 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 14 &lt;/td&gt;
-   &lt;td style="text-align:center;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; 15 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt;  &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 9 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 12 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 3 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; abril &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 18 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; 19 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 20 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: #31c854 !important;"&gt; 21 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 22 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; EC1 21/04/2022 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; EC1p 19/04/2022 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 17 &lt;/td&gt;
+   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; 18 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 19 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; EC1 18/04/2023 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 3 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 12 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; abril/mayo &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 25 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 26 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 27 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 28 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 29 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; abril &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 22 &lt;/td&gt;
+   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;color:  !important;background-color:  !important;"&gt; 23 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 24 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 25 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 26 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; EC1p 23/04/2023 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 13 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; mayo &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; abril/mayo &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 30 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 14 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; mayo &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 11 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 12 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 13 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Práctica 4 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 7 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 9 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Práctica 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 15 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; mayo &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 16 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; 17 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 18 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 19 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 20 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; Tema 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; EC2p 17/05/2022 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 13 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 14 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 17 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Tema 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; EC2p 16/05/2023 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; ... &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; ... &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; ... &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; ... &lt;/td&gt;
    &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; ... &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; ... &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; ... &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; ... &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt;  &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; junio &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; 2 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; Concocatoria ordinaria &lt;a href="https://feet.ulpgc.es/sites/default/files/wp-content/uploads/2021/07/calendario_examenes_ge_2021-22_aprobado_en_junta_090721.pdf"&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 02/06/2022 &lt;/td&gt;
+   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; 27 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; 28 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 30 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 31 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Concocatoria ordinaria &lt;a href="https://feet.ulpgc.es/sites/default/files/wp-content/uploads/22_23/CALENDARIOEXAMENESYTFT/calendario_examenes_ge_2022-23.pdf"&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 27/05/2023 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; ... &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; ... &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;color:  !important;background-color:  !important;"&gt; ... &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; ... &lt;/td&gt;
    &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; ... &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; ... &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; ... &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; ... &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt;  &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; julio &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;"&gt; Concocatoria extraordinaria  &lt;a href="https://feet.ulpgc.es/sites/default/files/wp-content/uploads/2021/07/calendario_examenes_ge_2021-22_aprobado_en_junta_090721.pdf"&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/td&gt;
-   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 06/07/2022 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;color: white !important;background-color: #31c854 !important;color:  !important;background-color:  !important;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;color: black !important;background-color: white !important;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Concocatoria extraordinaria  &lt;a href="https://feet.ulpgc.es/sites/default/files/wp-content/uploads/22_23/CALENDARIOEXAMENESYTFT/calendario_examenes_ge_2022-23.pdf"&gt;&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 02/07/2023 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -602,16 +629,20 @@ del Campus Virtual de la asignatura u otros medios disponibles en la ULPGC.
 class:  middle
 
 
+
+
 &lt;ru-blockquote&gt;Christian González Martel&lt;/ru-blockquote&gt;
 
 .pull-left[
-|                                                                                                            |                                   |
-| :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| .RUred[&lt;i class="fas fa-building"&gt;&lt;/i&gt;] |  D-4.07 |
-| .RUred[&lt;i class="fas fa-clock"&gt;&lt;/i&gt;] |  Lunes de 9:30 a 13:30 |
-|  |  Viernes de 11:00 a 13:00 |
-| &lt;a href="mailto:christian.gonzalez@ulpgc.es"&gt;.RUred[&lt;i class="fas fa-paper-plane"&gt;&lt;/i&gt;]&lt;/a&gt; |  christian.gonzalez@ulpgc.es       |
+|                                         |                                         |
+| :-------------------------------------- | :-------------------------------------- |
+| .RUred[&lt;i class="fas fa-building"&gt;&lt;/i&gt;]                                           |  D-4.07                |
+| &lt;a href="mailto:christian.gonzalez@ulpgc.es"&gt;.RUred[&lt;i class="fas fa-clock"&gt;&lt;/i&gt;] |  Lunes de 11:00 a 13:00 |
+|  |  Martes de 11:00 a 12:30 |
+|  |  Jueves de 9:30 a 12:00 |
+| &lt;a href="mailto:christian.gonzalez@ulpgc.es"&gt;.RUred[&lt;i class="fas fa-paper-plane"&gt;&lt;/i&gt;]&lt;/a&gt; |  christian.gonzalez@ulpgc.es      |
 ]
+
 
 ---
 class: middle
@@ -669,6 +700,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
